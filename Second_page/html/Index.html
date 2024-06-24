@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/Second_page/css/style.css">
+</head>
+
+<body>
+
+    <div class="main__boxx">
+        <form onsubmit=takevalues() id="myForm">
+            <!-- first name -->
+            <div class="field">
+                <label for="fname">Name :</label>
+                <input type="text" name="fname" id="fname">
+                <br>
+            </div>
+            <!-- last name -->
+            <div class="field">
+                <label for="lname">Last Name :</label>
+                <input type="text" name="lname" id="lname">
+                <br>
+            </div>
+            <!-- date of birth -->
+            <div class="field">
+                <label for="dob">Date of Birth :</label>
+                <input type="date" name="dob" id="dob">
+                <br>
+            </div>
+            <!-- email -->
+            <div class="field">
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email">
+                <br>
+            </div>
+            <!-- gender -->
+            <div class="field">
+                <label for="gender">Gender :</label>
+                <select name="gender" id="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="others">others</option>
+                    <option value="" selected></option>
+                </select>
+            </div>
+            <!-- submit btn -->
+            <input type="submit" value="submit">
+
+        </form>
+    </div>
+
+    <div class="table" style="display: none;">
+        <table>
+            <thead>
+                <th>S.NO</th>
+                <th>Name</th>
+                <th>Last Name </th>
+                <th>Date Of Birth</th>
+                <th>Email</th>
+                <th>Gender</th>
+                <th>Action </th>
+            </thead>
+            
+            <tbody> </tbody>
+
+        </table>
+    </div>
+
+
+
+
+    <script src="/Second_page/js/script.js"></script>
+</body>
+
+</html>
